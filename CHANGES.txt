@@ -1,1 +1,2 @@
 v0.1, '2015-04-25' -- Initial release.
+v0.1.1, '2015-05-19' -- Bug install_requires.

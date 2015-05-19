@@ -24,6 +24,7 @@ setup(
 
       https://smartcoin.com.br/api/ - API Reference
     """,
+    install_requires=['requests'],
     classifiers=[
         'Intended Audience :: Developers',
         'Natural Language :: English',
