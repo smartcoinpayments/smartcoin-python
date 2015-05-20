@@ -40,3 +40,10 @@ class ParameterTypeError(CustomException):
         super(ParameterTypeError, self).__init__(
             'The value sent to "{}" can not be {}'.format(parameter, type)
         )
+
+class ObjectTypeNotAllowed(CustomException):
+
+    def __init__(self, attribute, value):
+        super(ObjectTypeNotAllowed, self).__init__(
+            'The attribute "{}" can not be {} for this object'.format(attribute, value)
+        )
