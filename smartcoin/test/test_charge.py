@@ -164,28 +164,28 @@ class ChargeTests(SmartcoinTestCase):
             [123]
         )
 
-    def test_charge_refound_total(self):
+    def test_charge_refund_total(self):
         charge = self._charge_api.create(CHARGE_DATA)
         self.assert_response_type(charge)
         self.assert_not_error(charge)
         self.assertIn('id', charge)
-        self._charge_api.refound(charge['id'])
+        self._charge_api.refund(charge['id'])
 
-    def test_charge_refound_partial(self):
+    def test_charge_refund_partial(self):
         charge = self._charge_api.create(CHARGE_DATA)
         self.assert_response_type(charge)
         self.assert_not_error(charge)
         self.assertIn('id', charge)
-        self._charge_api.refound(charge['id'], amount=100)
+        self._charge_api.refund(charge['id'], amount=100)
 
-    def test_charge_refound_partial_fail(self):
+    def test_charge_refund_partial_fail(self):
         charge = self._charge_api.create(CHARGE_DATA)
         self.assert_response_type(charge)
         self.assert_not_error(charge)
         self.assertIn('id', charge)
         self.assertRaises(
             ParameterTypeError,
-            self._charge_api.refound,
+            self._charge_api.refund,
             charge['id'],
             [123] 
         )

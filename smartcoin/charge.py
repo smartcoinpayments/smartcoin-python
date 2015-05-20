@@ -73,7 +73,7 @@ class Charge(Action):
         url = self.api.make_url(['charges', id])
         return super(Charge, self).change(url, data)
 
-    def refound(self, id, amount=0):
+    def refund(self, id, amount=0):
         data = {}
         if type(amount) not in (int, str):
             raise ParameterTypeError('amount', type(amount))
@@ -87,7 +87,7 @@ class Charge(Action):
             if amount <= 0:
                 del data['amount']
 
-        url = self.api.make_url(['charges', id, 'refound'])
+        url = self.api.make_url(['charges', id, 'refund'])
         return self.api.post(url, data)
 
     def capture(self, id, amount=0):
