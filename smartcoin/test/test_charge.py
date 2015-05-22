@@ -109,7 +109,7 @@ class ChargeTests(SmartcoinTestCase):
         self.assertRaises(
             ParameterTypeError,
             self._charge_api.list,
-            {'count': ['10']}   
+            {'count': ['10']}
         )
 
     def test_charge_list_offset(self):
@@ -122,7 +122,7 @@ class ChargeTests(SmartcoinTestCase):
         self.assertRaises(
             ParameterTypeError,
             self._charge_api.list,
-            {'offset': {'10': 1}}   
+            {'offset': {'10': 1}}
         )
 
     def test_charge_list_created(self):
@@ -135,7 +135,7 @@ class ChargeTests(SmartcoinTestCase):
         self.assertRaises(
             ParameterValueNotAllowed,
             self._charge_api.list,
-            {'created': 'gt:2015-05'}   
+            {'created': 'gt:2015-05'}
         )
 
     def test_charge_capture_total(self):
@@ -187,7 +187,7 @@ class ChargeTests(SmartcoinTestCase):
             ParameterTypeError,
             self._charge_api.refund,
             charge['id'],
-            [123] 
+            [123]
         )
 
 if __name__ == '__main__':

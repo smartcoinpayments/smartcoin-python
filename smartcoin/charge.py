@@ -96,7 +96,7 @@ class Charge(Action):
             raise ParameterTypeError('amount', type(amount))
         try:
             data['amount'] = int(amount)
-        except ValueError:    
+        except ValueError:
             pass
         except:
             raise
