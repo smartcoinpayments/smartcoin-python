@@ -93,5 +93,5 @@ except Exception, message:
 
 Originally by [Felipe Tomaz](https://github.com/Arenhardt).
 
-Contribuitor(es):
+Colaborador(es):
     [Ricardo Caldeira](https://github.com/ricocaldeira)
