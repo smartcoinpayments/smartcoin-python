@@ -23,7 +23,7 @@ Execute o script de setup:
 
 ## Documentação
 
-Visite [smartcoin.com.br/api/](https://smartcoin.com.br/api/) for api reference.
+Visite [smartcoin.com.br/api/](https://smartcoin.com.br/api/) para consultar documentação de referência..
 
 ## Exemplo de uso:
 
