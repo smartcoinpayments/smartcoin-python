@@ -89,6 +89,16 @@ except Exception, message:
 
 ```
 
+## Teste
+
+Para instalar a suíte de testes, siga as intruções em:
+
+	https://pypi.python.org/pypi/unittest2
+
+Para executar a suíte de testes:
+
+	unit2
+
 ## Autor
 
 Originally by [Felipe Tomaz](https://github.com/Arenhardt).
