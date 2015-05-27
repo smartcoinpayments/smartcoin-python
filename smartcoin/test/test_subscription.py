@@ -92,5 +92,11 @@ class SubscriptionTests(SmartcoinTestCase):
         self.assert_not_error(data)
         self.assertIs(type(data['data']), list)
 
+    def test_subscription_list_without_customer(self):
+        data = self._subscription_api.list_all()
+        self.assert_response_type(data)
+        self.assert_not_error(data)
+        self.assertIs(type(data['data']), list)
+
 if __name__ == '__main__':
     unittest.main()

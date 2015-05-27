@@ -2,3 +2,4 @@ v0.1, '2015-04-25' -- Initial release.
 v0.1.1, '2015-05-19' -- Bug install_requires.
 v0.1.2, '2015-05-20' -- Renamed method refound to refund, Removed unnecessary exception class, Included method capture
         '2015-05-22' -- Fix pep8, update documentation, update version
+v0.1.3, '2015-05-27' -- Included method list_all to list all subscriptions without a customer id
