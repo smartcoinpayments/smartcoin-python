@@ -33,3 +33,7 @@ class Subscription(Action):
     def list(self, customer_id):
         url = self.api.make_url(['customers', customer_id, 'subscriptions'])
         return super(Subscription, self).list(url)
+    
+    def list_all(self):
+        url = self.api.make_url(['subscriptions'])
+        return super(Subscription, self).list(url)
